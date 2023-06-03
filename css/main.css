@@ -18,7 +18,7 @@ body::after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../img/facebook-color.png) url(../img/instagram-color.png);
+    content: url(../img/facebook-color.png) url(../img/instagram-color.png) url(../img/facebook.png) url(../img/instagram.png);
 }
 .wrapper-main {
     width: 1000px;
