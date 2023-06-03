@@ -1,0 +1,162 @@
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #1a253a;
+    margin-top: 60px;
+    background-image: url(../img/look-to-the-front-of-the-shiba-inu-b721aa8627c4a817ca518e1056479f3c.png), url(../img/wallpaperflare-cropped.jpg);
+    background-size: 70vh, cover;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-intro h1 {
+    font-size: 96px;
+    line-height: 106px;
+}
+/* main p {
+    font-size: 18px;
+    line-height: 30px;
+} */
+main a {
+    margin-top: 30px;
+    font-size: 18px;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background-color: var(--site-color-01);
+    padding: 0 20px;
+    width: fit-content;
+}
+main a:hover {
+    background-color: var(--site-color-01-hover);
+}
+main .main-quotes p {
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 20px;
+    margin: 40px 0;
+}
+
+/* Category section */
+.index-category {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.index-category p {
+    color: #111;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.index-category-box {
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+.index-category-box:nth-child(2) {
+    background-image: url(../img/categories/coding.jpg);
+}
+.index-category-box:nth-child(3) {
+    background-image: url(../img/categories/graphs2.jpg);
+}
+.index-category-box:nth-child(4) {
+    background-image: url(../img/categories/graphs.jpg);
+}
+.index-category-box:nth-child(5) {
+    background-image: url(../img/categories/development.jpg );
+}
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: #a5a5a5b2; */
+    background-color: #F5F3F3;
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+}
+.index-category-box:hover .dark-overlay{
+    opacity: 0;
+}
+.index-category-box h3 {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: 0px 2px 4px #000;
+    z-index: 100;
+}
+.index-about {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #080d08cd;
+}
+.index-about-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+.index-about-img img {
+    width: 300px;
+    border-radius: 300px;
+}
+.index-about-text {
+    flex-basis: 455px;
+}
+.index-about-text h2 {
+    flex-basis: 455px;
+}
+.index-about-text p {
+    padding: 20px 0;
+}
+.index-about-text a {
+    font-size: 18px;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background-color: var(--site-color-01);
+    padding: 0 20px;
+    width: fit-content;
+}
+.index-about-text a:hover {
+    background-color: var(--site-color-01-hover);
+}
+.index-about-skill {
+    flex-basis: 350px;
+}
+.index-about-skill-bar {
+    width: calc(100%-3px);
+    height: 20px;
+    border: 3px solid #F5F3F3;
+
+}
+.index-about-skill-bar-fill {
+    height: 100%;
+    background-color: var(--site-color-01);
+}
+.py {
+    width: 50%;
+}
+.c {
+    width: 50%;
+}
+.htmlcss
+{
+    width: 20%;
+}
