@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+:root {
+    --site-color-01: #c13584;
+    --site-color-01-hover: #9e2f6e;
+    --white-color: #ffffff;
+    --text-color: #fff;
+    --text-color-categories:#ffffff;
+}
+body {
+    background-color: #1e1e1e;
+}
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/facebook-color.png) url(../img/instagram-color.png);
+}
+.wrapper-main {
+    width: 1000px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--text-color);
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--text-color);
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--text-color);
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p {
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--text-color);
+    font-family: Roboto;
+}
+a {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-color);
+    font-family: Roboto;
+    cursor: pointer;
+}
+.header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Add/Subtract px from % using calc(100%-50px); format */
+    height: 60px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+}
+.header-main-logo img {
+    align-self: center;
+    height: 40px;
+}
+.header-main-nav {
+    width: fit-content;
+    height: 100%;
+}
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 30px;
+}
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+    
+}
+.header-main-nav ul li a{
+    padding: 0 10px;
+    font-family: Roboto, sans-serif;
+    line-height: 60px;
+    color: #000;
+    display: block;
+    height: 100%;
+}
+.header-main-nav ul li a:hover {
+    color: #c13584;
+}
+.header-main-sm {
+    width: fit-content;
+    height: 100%;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.header-main-sm-fb {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-main-sm-fb:hover{
+    background-image: url(../img/facebook-color.png);
+}
+.header-main-sm-in {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-main-sm-in:hover{
+    background-image: url(../img/instagram-color.png);
+}
